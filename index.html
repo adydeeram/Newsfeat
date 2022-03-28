@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Api</title>
+</head>
+
+<body class="relative">
+
+    <!-- Nav bar  -->
+
+    <div>
+        <nav id="header" class="fixed bg-slate-400 text-white w-full z-20 top-0">
+            <div id="progress" class="h-1 z-40 top-0"
+                style="background:linear-gradient(to right, #FFC100 var(--scroll), transparent 0);"></div>
+            <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+                <div class="block lg:hidden pl-8 p-2">
+                    <a class="text-yellow-300 font-bold text-base no-underline hover:no-underline" href="#">
+                        News-Fest
+                    </a>
+                </div>
+                <div class="block lg:hidden pr-4">
+                    <button id="nav-toggle"
+                        class="flex items-center px-3 py-2 text-yellow-300 border-gray-600 focus:outline-none">
+                        <svg fill="text-yellow-300" viewBox="0 0 20 20" class="w-6 h-6 fill-current">
+                            <title>Menu</title>
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="w-full flex-grow p-4 lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-black md:bg-transparent z-20"
+                    id="nav-content">
+                    <ul class="list-reset lg:flex justify-center flex-1 items-center">
+                        <li class="mr-3">
+                            <a id="main-headlines"
+                                class="border-b-0 md:border-b-4 border-yellow-300 inline-block py-2 px-4 text-yellow-300 font-bold"
+                                href="#">Main Headlines</a>
+                        </li>
+                        <li class="mr-3">
+                            <a id="sportBtn" class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4"
+                                href="#">Sports</a>
+                        </li>
+                        <li class="mr-3">
+                            <a id="BusinessBtn"
+                                class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4"
+                                href="#">Business</a>
+                        </li>
+                        <li class="mr-3">
+                            <a id="technologyBTn"
+                                class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4"
+                                href="#">Technology</a>
+                        </li>
+                        <li class="mr-3">
+                            <a id="entertainmentBtn"
+                                class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4"
+                                href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- News sections -->
+
+    <div>
+
+        <div class="min-h-screen bg-yellow-400 flex justify-center items-center py-20">
+            <div class="container mx-auto p-12 bg-gray-100 rounded-xl">
+                <h1 class="text-4xl uppercase font-bold from-current mb-8" id="Heading">Top Headlines</h1>
+                <!-- Box-1 -->
+                <div id="display-area" class="sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 space-y-4 sm:space-y-0">
+                    <!-- <div class="bg-white">
+                        <div>
+                            <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
+                                <div>
+                                    <img class="mx-auto" style="height: 10rem;" src="https://i.imgur.com/lmYYa2s.png" />
+                                    <div class="px-4 py-2">
+                                        <h1 class="text-xl font-gray-700 font-bold">Papież gigant</h1>
+                                        <div class="flex space-x-2 mt-2">
+                                            <span>
+                                                <svg class="h-7 w-7 text-yellow-400" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg>
+                                            </span>
+                                            <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
+                                        </div>
+                                        <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo
+                                            interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych
+                                            lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013
+                                            roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
+                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
+        <!-- component -->
+        <!-- This is an example component -->
+        <div class="bg-gray-900">
+            <footer class="flex flex-wrap items-center justify-between p-3 m-auto">
+                <div class="container mx-auto flex flex-col flex-wrap items-center justify-between">
+                    <ul class="flex mx-auto text-white text-center">
+                        <li class="p-2 cursor-pointer hover:underline">Terms & Conditions</li>
+                        <li class="p-2 cursor-pointer hover:underline">Privacy</li>
+                        <li class="p-2 cursor-pointer hover:underline">Cookies</li>
+                    </ul>
+                    <ul class="flex mx-auto text-white text-center">
+                        <li class="p-2 cursor-pointer"><svg  
+                                class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                            </svg></li>
+                        <li class="p-2 cursor-pointer"><svg  
+                                class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z"
+                                    fillRule="evenodd" clipRule="evenodd" />
+                            </svg></li>
+                        <li class="p-2 cursor-pointer"><svg  
+                                class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg></li>
+                    </ul>
+                    <div class="flex mx-auto text-white text-center">
+                        News-Fest  © 2022
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+
+
+    <script src="./api-library.js"></script>
+    <script src="./app.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Nav bar  js -->
+
+    <script>
+        var h = document.documentElement,
+            b = document.body,
+            st = 'scrollTop',
+            sh = 'scrollHeight',
+            progress = document.querySelector('#progress'),
+            scroll;
+        var scrollpos = window.scrollY;
+        var header = document.getElementById("header");
+        var navcontent = document.getElementById("nav-content");
+
+        document.addEventListener('scroll', function () {
+            scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            progress.style.setProperty('--scroll', scroll + '%');
+            scrollpos = window.scrollY;
+
+            if (scrollpos > 10) {
+                header.classList.add("bg-black");
+                navcontent.classList.remove("bg-black");
+                navcontent.classList.add("bg-black");
+            } else {
+                header.classList.remove("bg-black");
+                navcontent.classList.remove("bg-black");
+                navcontent.classList.add("bg-black");
+
+            }
+
+        });
+
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>
